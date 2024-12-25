@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CFP BANYAMWESI - Formulaire d'inscription</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            background: linear-gradient(to bottom, #1e1e2f, #4b6584);
+            color: white;
+        }
+        h1 {
+            margin: 20px 0;
+            font-size: 2.5em;
+            animation: glow 2s infinite;
+        }
+        p {
+            font-size: 1.2em;
+            margin: 10px 20px;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 20px auto;
+            width: 80%;
+        }
+        ul li {
+            margin: 10px 0;
+            padding: 10px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 5px;
+        }
+        .button {
+            display: inline-block;
+            margin: 15px 10px;
+            padding: 15px 30px;
+            font-size: 18px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            text-decoration: none;
+            cursor: pointer;
+            animation: bounce 2s infinite;
+        }
+        .button:hover {
+            background-color: #0056b3;
+        }
+        .form-container {
+            margin-top: 30px;
+            background-color: rgba(255, 255, 255, 0.2);
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .form-container input, .form-container textarea {
+            width: 80%;
+            padding: 12px;
+            margin: 10px 0;
+            background-color: rgba(255, 255, 255, 0.1);
+            border: none;
+            border-radius: 5px;
+            color: white;
+            font-size: 1em;
+        }
+        .form-container button {
+            padding: 15px 30px;
+            font-size: 18px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        .form-container button:hover {
+            background-color: #218838;
+        }
+        @keyframes glow {
+            0%, 100% { text-shadow: 0 0 10px #00d4ff, 0 0 20px #007bff; }
+            50% { text-shadow: 0 0 20px #00d4ff, 0 0 40px #007bff; }
+        }
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+    </style>
+</head>
+<body>
+    <h1>Bienvenue au CFP BANYAMWESI</h1>
+    <p>Votre avenir commence ici ! Découvrez toutes nos formations et inscrivez-vous directement en ligne.</p>
+    
+    <!-- Liste des formations -->
+    <h2>Nos Formations</h2>
+    <ul>
+        <li>Bureautique : Word, Excel, PowerPoint</li>
+        <li>Analyse de données : SPSS, STATA, Power BI</li>
+        <li>Collecte de données : KoboToolbox, ODK Collect</li>
+        <li>Comptabilité et Gestion : SAGE 100, SysOHADA</li>
+        <li>Langues : Anglais et Informatique</li>
+        <li>Marketing Digital et Recherche Informatique</li>
+        <li>Gestion de projets et Logistique humanitaire</li>
+        <li>Modélisation 3D et Programmation web</li>
+    </ul>
+    
+    <!-- Boutons -->
+    <a class="button" href="https://www.facebook.com/JustinHamuliBanya" target="_blank">Visitez notre Facebook</a>
+    <a class="button" href="https://wa.me/243976501015?text=Bonjour%20CFP%20BANYAMWESI%2C%20je%20souhaite%20en%20savoir%20plus!" target="_blank">Contactez-nous sur WhatsApp</a>
+
+    <!-- Formulaire d'inscription -->
+    <div class="form-container">
+        <h2>Inscrivez-vous à nos formations</h2>
+        <form action="https://formspree.io/f/xqkzvzep" method="POST">
+            <input type="text" name="nom" placeholder="Votre nom" required><br>
+            <input type="text" name="prenom" placeholder="Votre prénom" required><br>
+            <input type="email" name="email" placeholder="Votre email" required><br>
+            <input type="tel" name="telephone" placeholder="Votre numéro de téléphone" required><br>
+            <textarea name="message" placeholder="Pourquoi souhaitez-vous vous inscrire ?" rows="4" required></textarea><br>
+            <button type="submit">Envoyer ma demande</button>
+        </form>
+    </div>
+
+    <!-- Message Automatique -->
+    <script>
+        // Message automatique sur WhatsApp et Facebook
+        setTimeout(() => {
+            alert("Bonjour ! Découvrez le CFP BANYAMWESI : Formations professionnelles pour un avenir meilleur. Cliquez pour en savoir plus !");
+        }, 2000);
+    </script>
+</body>
+</html>
